@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+message Words {
+    repeated string word = 1;
+}
+
+service MessageService{
+    rpc SendWords(Words) returns (Words) {}
+}
+
+
+
